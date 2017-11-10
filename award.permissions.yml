@@ -1,0 +1,22 @@
+add the award entity entities:
+  title: 'Create new The Award Entity entities'
+
+administer the award entity entities:
+  title: 'Administer The Award Entity entities'
+  description: 'Allow to access the administration form to configure The Award Entity entities.'
+  restrict access: true
+
+delete the award entity entities:
+  title: 'Delete The Award Entity entities'
+
+edit the award entity entities:
+  title: 'Edit The Award Entity entities'
+
+access the award entity overview:
+  title: 'Access the The Award Entity overview page'
+
+view published the award entity entities:
+  title: 'View published The Award Entity entities'
+
+view unpublished the award entity entities:
+  title: 'View unpublished The Award Entity entities'

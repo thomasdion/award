@@ -1,0 +1,14 @@
+
+# The Award Entity menu items definition
+entity.award_entity.collection:
+  title: 'The Award Entity list'
+  route_name: entity.award_entity.collection
+  description: 'List The Award Entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+award_entity.admin.structure.settings:
+  title: The Award Entity settings
+  description: 'Configure The Award Entity entities'
+  route_name: award_entity.settings
+  parent: system.admin_structure

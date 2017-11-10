@@ -1,0 +1,22 @@
+{#
+/**
+ * @file award_entity.html.twig
+ * Default theme implementation to present The Award Entity data.
+ *
+ * This template is used when viewing The Award Entity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_award_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('award_entity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>
