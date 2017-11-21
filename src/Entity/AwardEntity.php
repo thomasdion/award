@@ -244,4 +244,26 @@ class AwardEntity extends ContentEntityBase implements AwardEntityInterface {
     return $fields;
   }
 
+  public static function deleteAll($current_user) {
+
+    // Refresh entity by deleting all entries
+    $ent_ret = \Drupal::entityQuery('award_entity','AND')
+              ->condition('user_id', $current_user)
+              ->execute();
+    entity_delete_multiple('award_entity', $ent_ret);
+  }
+
+  public static function insertAll($data) {
+
+     $awards = $data["awardees"];
+     foreach($awards as $award) {
+       $entity = AwardEntity::create();
+       $name = $award["name"];
+       $url = $award["url"];
+       $entity->setName($award["name"]);
+       $entity->setUrl($award["url"]);
+       $entity->save();
+     }
+  }
+
 }
